@@ -1,17 +1,25 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, } from "react-native";
 
 export default function Home() {
     return(
     <View style={Estilo.container}>
         <View style={Estilo.topBar}>
-            <Text style={Estilo.textobarra}>Pagina linda!</Text>
+            <Text style={Estilo.textobarra}>HOME</Text>
         </View>
 
-        <View style={styles.content}>
-            <Text>Aqui vai o conteúdo da sua página</Text>
+        <View style={Estilo.content}>
+            <TouchableOpacity style={Estilo.botao}>
+                <Text style={Estilo.textobotao}>AMD</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={Estilo.botao}>
+                <Text style={Estilo.textobotao}>EXAMES</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={Estilo.botao}>
+                <Text style={Estilo.textobotao}>LAUDOS</Text>
+            </TouchableOpacity>
         </View>
     </View>
-    )
+    );
 }
 
 const Estilo = StyleSheet.create({
@@ -27,11 +35,24 @@ const Estilo = StyleSheet.create({
     paddingTop: 10, // espaço extra para status bar em alguns dispositivos
   },
   textobarra: {
-    fontSize: 20
+    fontSize: 20,
+    color: "#ffffffff"
   },
   content: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    gap: 12,
+  },
+  botao: {
+    backgroundColor: "#007BFF",
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    width: 200,
+    alignItems: "center",
+  },
+  textobotao: {
+    color: "#ffffffff"
   }
 });
