@@ -9,13 +9,16 @@ export default function Home() {
 
         <View style={Estilo.content}>
             <TouchableOpacity style={Estilo.botao}>
-                <Text style={Estilo.textobotao}>AMD</Text>
+                <Text style={Estilo.textobotao}>ADM</Text>
             </TouchableOpacity>
             <TouchableOpacity style={Estilo.botao}>
                 <Text style={Estilo.textobotao}>EXAMES</Text>
             </TouchableOpacity>
             <TouchableOpacity style={Estilo.botao}>
                 <Text style={Estilo.textobotao}>LAUDOS</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={Estilo.botao}>
+                <Text style={Estilo.textobotao}>PACIENTES</Text>
             </TouchableOpacity>
         </View>
     </View>
