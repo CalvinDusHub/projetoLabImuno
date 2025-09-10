@@ -27,7 +27,7 @@ export default function Paciente(){
            </View>
 
            <View style={Estilo.footer}>
-              <TouchableOpacity syle={Estilo.botao}>
+              <TouchableOpacity syle={Estilo=botao}>
                 <Text style={Estilo.textoBotao}>Salvar</Text>
               </TouchableOpacity>
            </View>
