@@ -1,13 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import PaginaExames from './src/pages/exames';
+import Home from './src/pages/home';
 
 export default function App() {
   return (
     
     <View style={styles.container}>
-      <PaginaExames />
+      <Home />
       <StatusBar style="auto" />
     </View>
   );
