@@ -14,7 +14,7 @@ export default function Paciente(){
                 <TextInput style={Estilo.input} placeholder="(xx) xxxxx-xxxx" keyboardType="phone-pad" />
 
                 <Text style={Estilo.label}>Email:</Text>
-                <TextInput style={Estilo.input} placeholder="exemplo@email.com" keyboardType="email-anddreass" />
+                <TextInput style={Estilo.input} placeholder="exemplo@email.com" keyboardType="email-address" />
 
                 <Text style={Estilo.label}>Data de nascimento:</Text>
                 <TextInput style={Estilo.input} placeholder="dd/mm/aaaa" />
@@ -27,7 +27,10 @@ export default function Paciente(){
            </View>
 
            <View style={Estilo.footer}>
-              <TouchableOpacity syle={Estilo=botao}>
+              <TouchableOpacity 
+                style={Estilo.botao} 
+                onPress={() => alert("Paciente salvo com sucesso!")}
+              >
                 <Text style={Estilo.textoBotao}>Salvar</Text>
               </TouchableOpacity>
            </View>
@@ -46,7 +49,7 @@ const Estilo = StyleSheet.create({
     header: {
         marginBottom: 20
     },
-    titulo: {
+    txtLogin: {
         fontSize: 22,
         fontWeight: "bold"
     },
@@ -88,4 +91,3 @@ const Estilo = StyleSheet.create({
         fontSize: 16
     }
 });
-
