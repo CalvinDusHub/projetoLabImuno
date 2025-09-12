@@ -8,7 +8,7 @@ export default function App() {
   return (
     
     <View style={styles.container}>
-      <Paciente />
+      <Home />
       <StatusBar style="auto" />
     </View>
   );

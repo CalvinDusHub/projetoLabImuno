@@ -1,4 +1,5 @@
 import { Text, View, StyleSheet, TouchableOpacity, } from "react-native";
+import Sidebar from "../../components/SideBar";
 
 export default function Home() {
     return(
@@ -6,7 +7,9 @@ export default function Home() {
         <View style={Estilo.topBar}>
             <Text style={Estilo.textobarra}>HOME</Text>
         </View>
-
+        
+      <View style={Estilo.mainArea}>
+        <Sidebar />
         <View style={Estilo.content}>
             <TouchableOpacity style={Estilo.botao}>
                 <Text style={Estilo.textobotao}>ADM</Text>
@@ -21,6 +24,7 @@ export default function Home() {
                 <Text style={Estilo.textobotao}>PACIENTES</Text>
             </TouchableOpacity>
         </View>
+      </View>
     </View>
     );
 }
@@ -29,13 +33,14 @@ const Estilo = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    flexDirection: "collum"
   },
   topBar: {
     height: 60,
     backgroundColor: "#007BFF", // Azul
     justifyContent: "center",
     alignItems: "center",
-    paddingTop: 10, // espaço extra para status bar em alguns dispositivos
+    paddingTop: 10, 
   },
   textobarra: {
     fontSize: 20,
@@ -57,5 +62,9 @@ const Estilo = StyleSheet.create({
   },
   textobotao: {
     color: "#ffffffff"
-  }
+  },
+  mainArea: {
+    flex: 1,
+    flexDirection: "row", // aqui sim: barra lateral + conteúdo
+  },
 });
