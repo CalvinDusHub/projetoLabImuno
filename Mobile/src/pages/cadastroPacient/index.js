@@ -27,16 +27,14 @@ export default function Paciente(){
            </View>
 
            <View style={Estilo.footer}>
-<<<<<<< Updated upstream
+
               <TouchableOpacity 
                 style={Estilo.botao} 
-                onPress={() => alert("Paciente salvo com sucesso!")}
+                onPress={() => alert("Paciente Salvo!")}
               >
-=======
-              <TouchableOpacity syle={Estilo.botao}>
->>>>>>> Stashed changes
                 <Text style={Estilo.textoBotao}>Salvar</Text>
               </TouchableOpacity>
+              
            </View>
         </View>
     )
