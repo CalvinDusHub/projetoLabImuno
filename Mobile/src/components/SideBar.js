@@ -20,6 +20,7 @@ export default function SideBar(){
                 <Ionicons name="speedometer" size={28} color="white" />
                 <Text style={Estilo.text}>ADM</Text>
             </TouchableOpacity>
+            
         </View>
     )
 }

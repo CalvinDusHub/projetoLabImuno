@@ -1,7 +1,10 @@
 import { Text, View, StyleSheet, TouchableOpacity, } from "react-native";
 import Sidebar from "../../components/SideBar";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { NavigationContainer } from "@react-navigation/native";
+import Exames from '../exames/Exames'
 
-export default function Home() {
+export function Home() {
     return(
     <View style={Estilo.container}>
         <View style={Estilo.topBar}>
@@ -28,6 +31,20 @@ export default function Home() {
     </View>
     );
 }
+
+const Tab = createBottomTabNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Linda" component={Exames} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
+
 
 const Estilo = StyleSheet.create({
   container: {
