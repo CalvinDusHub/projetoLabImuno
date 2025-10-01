@@ -4,11 +4,11 @@ export default function Paciente(){
     return (
         <View style={Estilo.container}>
            <View style={Estilo.header}>
-                <Text style={Estilo.txtLogin}>Cadastro de Pacientes</Text>
+                <Text style={Estilo.txtLogin}>Cadastro de Pacientes UP</Text>
            </View> 
            <View style={Estilo.body}>
                 <Text style={Estilo.label}>Nome Completo:</Text>
-                <TextInput style={Estilo.input} placeholder="Digite o nome"/>
+                <TextInput style={Estilo.input} placeholder="Digite o nome" placeholderTextColor="#fcba03"/>
 
                 <Text style={Estilo.label}>Telefone:</Text>
                 <TextInput style={Estilo.input} placeholder="(xx) xxxxx-xxxx" keyboardType="phone-pad" />
@@ -73,10 +73,10 @@ const Estilo = StyleSheet.create({
         borderColor: "#C2DDEE",
         borderWidth: 2,
         borderRadius: 10,
-        marginBottom: 20
+        marginBottom: 20,
     },
     footer: {
-        width: "100%",
+        widthinput::placeholder: "100%",
         alignItems: "center"
     },
     botao: {
