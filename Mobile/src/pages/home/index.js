@@ -1,10 +1,6 @@
 import { Text, View, StyleSheet, TouchableOpacity, } from "react-native";
-import Sidebar from "../../components/SideBar";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { NavigationContainer } from "@react-navigation/native";
-import Exames from '../exames/Exames'
 
-export function Home() {
+export default function Home() {
     return(
     <View style={Estilo.container}>
         <View style={Estilo.topBar}>
@@ -12,7 +8,6 @@ export function Home() {
         </View>
         
       <View style={Estilo.mainArea}>
-        <Sidebar />
         <View style={Estilo.content}>
             <TouchableOpacity style={Estilo.botao}>
                 <Text style={Estilo.textobotao}>ADM</Text>
@@ -32,25 +27,11 @@ export function Home() {
     );
 }
 
-const Tab = createBottomTabNavigator();
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="Linda" component={Exames} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  )
-}
-
-
 const Estilo = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    flexDirection: "collum"
+    backgroundColor: '#ffffff',
+    flexDirection: "column"
   },
   topBar: {
     height: 60,
