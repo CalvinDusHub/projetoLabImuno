@@ -9,7 +9,7 @@
     .bg-leac { background-color: #0c4299; }
     .text-leac { color: #0c4299; }
     .btn-leac { background-color: #0c4299; color: white; }
-    .btn-leac:hover { background-color: #083b7a; }
+    .btn-leac:hover { background-color: #083b7a; } 
     .table th, .table td { vertical-align: middle; }
     .border-leac { border: 2px solid #0c4299; }
   </style>

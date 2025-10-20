@@ -1,21 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import PaginaExames from './src/pages/exames';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Home from './src/pages/home';
+import Exames from './src/pages/exames';
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    
-    <View style={styles.container}>
-      <PaginaExames />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Exames" component={Exames} />
+      </Tab.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
-});
